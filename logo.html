@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sarah Latka | 25 years Hochschule Hof</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/logo.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="">
+  </head>
+
+
+<body>
+
+<nav class="nav">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">SL.</label>
+    <ul>
+      <li><a  href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li id="web"><a href="index.html">SL.</a></li>
+      <li><a href="#projekte">Projects</a></li>
+      <li><a href="work3.html?a=1">Playground</a></li>
+    </ul>
+  </nav> 
+</nav>
+
+<!-- ----------------------------------->
+
+
+<div class="con">
+  <div class="parallax">
+
+  </div>
+</div>
+
+
+<div class="slowup">
+<a id="button">
+   <img src="img/hoch.png">
+</a>
+´</div>
+
+<div class="überschrift">
+  <h2>25 years Hochschule Hof</h2>
+  <p>Logo addition
+ </p>
+</div>
+
+  
+<div class="strich"></div>
+
+
+<div class="wrapper">
+
+<div class="sec" id="two">
+
+    <div class="column">
+      <div class="free">
+     <h3>Subject</h3>
+  <p>Logo addition for the 25th anniversary of the University Hof
+</p>
+  </div>
+
+    </div>
+
+    <div class="column" >
+      <div class="person">
+     <h3>Field</h3>
+  <p>Logo design
+</p>
+  </div>
+</div>
+
+  <div class="column">
+      <div class="person">
+     <h3>Date</h3>
+  <p>12.2018 – 01.2019<br> first semester
+</p>
+  </div>
+
+    </div>
+
+</div>
+
+<div class="text_2">
+  <h3>About</h3>
+
+  <p class="tt">
+In keeping with the 25th-anniversary celebration of the University Hof, we had to design a logo addition for this occasion, which should be combined with the existing university logo. The addition should be kept clear and simple and should not be too fragmented. It should also take up the colors of the university logo.
+
+</p>
+  </div>
+</div>
+
+<div class="wrapo">
+  <img src="img/logo/1.png">
+</div>
+
+
+   <footer >
+  <p id="ll">Copyright Sarah Latka - © 2020 | <a href="legal.html" style="color: white; text-decoration: none;">Legal Notice</a> </p>
+</footer>
+
+<script type="text/javascript" src="js2.js"></script>
+
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration:800
+    });
+  </script>
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+  function ToTop(){
+    scrollpos = 0;
+    scrollt = false;
+    window.scrollTo(0,0);
+}
+
+jQuery(document).ready(function() {
+  
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+});
+
+document.querySelector('.slowup').setAttribute('style','opacity:0');
+
+document.addEventListener ('scroll',function () {
+  document.querySelector('.slowup').setAttribute('style','opacity:0.6');
+});
+</script>
+
+
+</html>

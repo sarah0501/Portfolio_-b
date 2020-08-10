@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sarah Latka | Den Ton angeben</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/Töpfer.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="">
+  </head>
+
+
+<body>
+
+  <nav class="nav">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">SL.</label>
+    <ul>
+      <li><a  href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li id="web"><a href="index.html">SL.</a></li>
+      <li><a href="#projekte">Projects</a></li>
+      <li><a href="work3.html?a=1">Playground</a></li>
+    </ul>
+  </nav> 
+
+<!-- ----------------------------------->
+
+
+<div class="con">
+  <div class="parallax">
+
+  </div>
+</div>
+
+
+<div class="slowup">
+<a id="button">
+   <img src="img/hoch.png">
+</a>
+´</div>
+
+<div class="überschrift">
+  <h2>Den Ton angeben</h2>
+  <p>Portrait of a potter
+ </p>
+</div>
+
+  
+<div class="strich"></div>
+
+
+<div class="wrapper">
+
+<div class="sec" id="two">
+
+    <div class="column">
+      <div class="free">
+     <h3>Subject</h3>
+  <p>Portrait of a person in a profession
+</p>
+  </div>
+
+    </div>
+
+    <div class="column" >
+      <div class="person">
+     <h3>Field</h3>
+  <p>Photography, print design
+</p>
+  </div>
+</div>
+
+  <div class="column">
+      <div class="person">
+     <h3>Date</h3>
+  <p>12.2019 – 01.2020<br> third semester
+</p>
+  </div>
+
+    </div>
+
+</div>
+
+<div class="text_2">
+  <h3>About</h3>
+
+  <p class="tt">
+What you can see on this page, is the result of the task to create a two to four-page long article for a fictional magazine. Therefore, we had to photograph a person who is in a profession or is engaged in volunteering. The nature of their work, their commitment should be visible in some form. A small explanatory text complements the pictures in the magazine.
+For my work, I wanted to portrait a person with a job that is not that common anymore. After some days of research, I found a potter based in Thurnau that fit my expectations very well.
+<br><br>
+Here you can see some of the results of the shooting:
+
+</p>
+  </div>
+</div>
+
+<div class="container2">
+  <a href="img/tö/druck.jpg" data-lightbox="Portfolio"><img src="img/tö/druck.jpg"></a>
+  <a href="img/tö/malen.jpg" data-lightbox="Portfolio"><img src="img/tö/malen.jpg"></a>
+  <a href="img/tö/IMG_9508.jpg" data-lightbox="Portfolio"><img src="img/tö/IMG_9508.jpg"></a>
+  <a href="img/tö/IMG_9595.jpg" data-lightbox="Portfolio"><img src="img/tö/IMG_9595.jpg"></a>
+  <a href="img/tö/IMG_9597.jpg" data-lightbox="Portfolio"><img src="img/tö/IMG_9597.jpg"></a>
+  <a href="img/tö/IMG_9716.jpg" data-lightbox="Portfolio"><img src="img/tö/IMG_9716.jpg"></a>
+
+</div>
+
+  <div class="article">
+
+    <div class="text">
+  <h3 class="art">The final article:</h3>
+  </div>
+    <div class="einz">
+   <a href="img/tö/b1.png" data-lightbox="Portfolio"><img src="img/tö/b1.png"></a>
+ </div>
+ <div class="einz" style="margin-top: 5%;">
+   <a href="img/tö/b2.png" data-lightbox="Portfolio"><img src="img/tö/b2.png"></a>
+   </div>
+  </div>
+
+
+   <footer >
+  <p id="ll">Copyright Sarah Latka - © 2020 | <a href="legal.html" style="color: white; text-decoration: none;">Legal Notice</a> </p>
+</footer>
+
+<script type="text/javascript" src="js2.js"></script>
+
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration:800
+    });
+  </script>
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+  function ToTop(){
+    scrollpos = 0;
+    scrollt = false;
+    window.scrollTo(0,0);
+}
+
+jQuery(document).ready(function() {
+  
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+});
+
+document.querySelector('.slowup').setAttribute('style','opacity:0');
+
+document.addEventListener ('scroll',function () {
+  document.querySelector('.slowup').setAttribute('style','opacity:0.6');
+});
+</script>
+
+
+</html>

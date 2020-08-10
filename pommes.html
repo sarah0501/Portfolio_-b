@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sarah Latka | Wer schön sein will muss leiden</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/Pommes.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+
+<body>
+
+  <nav class="nav">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">SL.</label>
+    <ul>
+      <li><a  href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li id="web"><a href="index.html">SL.</a></li>
+      <li><a href="#projekte">Projects</a></li>
+      <li><a href="work3.html?a=1">Playground</a></li>
+    </ul>
+  </nav> 
+
+<!-- ----------------------------------->
+
+
+<div class="container">
+  <div class="parallax">
+
+  </div>
+</div>
+
+
+<div class="slowup">
+<a id="button">
+   <img src="img/hoch.png">
+</a>
+´</div>
+
+<div class="überschrift">
+  <h2>Wer Pommes sein will muss leiden</h2>
+  <p>A short animated video about the pressure to externally adapt to society.
+ </p>
+</div>
+
+  
+<div class="strich"></div>
+
+
+<div class="wrapper">
+
+<div class="sec" id="two">
+
+    <div class="column">
+      <div class="free">
+     <h3>Subject</h3>
+  <p>Collection
+</p>
+  </div>
+
+    </div>
+
+    <div class="column" >
+      <div class="person">
+     <h3>Field</h3>
+  <p>Animation, film
+</p>
+  </div>
+</div>
+
+  <div class="column">
+      <div class="person">
+     <h3>Date</h3>
+  <p>12.2019 – 01.2020 <br> third semester
+</p>
+  </div>
+
+    </div>
+
+</div>
+
+<div class="text">
+  <h3>About</h3>
+
+  <p class="tt" id="trigger">
+This project was about making a short animated movie that contains a collection and fits nicely to the music. I decided to deal with the topic of cosmetic surgery and the pressure to adapt externally to society. I chose potatoes as the main actors, inspired by Melanie Matinez´s song ‘’Mrs. Potato Head”. Throughout the film, the potatoes are processed into fries. The main character initially escapes these interventions, but as he notices that he isn´t accepted the way he is, he wants to endure the interventions Whether he pulls it through or changes his mind at the last moment should remain unclear due to the open end.
+This movie was created as a mashup of a stop-motion movie and a normal film. The eyes of the potatoes were animated on the pictures afterward. 
+
+</p>
+  </div>
+
+
+<iframe src="https://www.youtube.com/embed/irZqmfu2wXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="groß"></iframe>
+
+</div>
+    <footer >
+  <p id="ll">Copyright Sarah Latka - © 2020 | <a href="legal.html" style="color: white; text-decoration: none;">Legal Notice</a> </p>
+</footer>
+
+<script type="text/javascript" src="js2.js"></script>
+
+
+</body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration:800
+    });
+  </script>
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+  function ToTop(){
+    scrollpos = 0;
+    scrollt = false;
+    window.scrollTo(0,0);
+}
+jQuery(document).ready(function() {
+  
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+});
+
+document.querySelector('.slowup').setAttribute('style','opacity:0');
+
+document.addEventListener ('scroll',function () {
+  document.querySelector('.slowup').setAttribute('style','opacity:0.6');
+});
+
+$(document).on('scroll', function() {
+  // #theTarget in deine id
+    if($(this).scrollTop()>=$('#trigger').position().top){
+        playVid('theTarget');
+    }
+    // #theTarget in deine 2 id
+    if($(this).scrollTop()>=$('#trigger2').position().top){
+        playVid('theTarget');
+    }
+})
+function playVid(vide) {
+    document.getElementById(vide).play();
+}
+
+$('#theTarget').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
+</script>
+
+
+</html>

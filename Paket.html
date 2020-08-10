@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sarah Latka | Westen im Paket</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/Paket.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+
+<body>
+
+ <nav class="nav">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">SL.</label>
+    <ul>
+      <li><a  href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li id="web"><a href="index.html">SL.</a></li>
+      <li><a href="#projekte">Projects</a></li>
+      <li><a href="work3.html?a=1">Playground</a></li>
+    </ul>
+  </nav> 
+
+<!-- ----------------------------------->
+
+
+<div class="container">
+  <div class="parallax">
+
+  </div>
+</div>
+
+
+<div class="slowup">
+<a id="button">
+   <img src="img/hoch.png">
+</a>
+´</div>
+
+<div class="überschrift">
+  <h2>Westen im Paket</h2>
+  <p>Storytelling website build with pageflow
+ </p>
+</div>
+
+  
+<div class="strich"></div>
+
+
+<div class="wrapper">
+
+<div class="sec" id="two">
+
+    <div class="column">
+      <div class="free">
+     <h3>Subject</h3>
+  <p>Collection
+</p>
+  </div>
+
+    </div>
+
+    <div class="column" >
+      <div class="person">
+     <h3>Field</h3>
+  <p>Animation, Webdesign
+</p>
+  </div>
+</div>
+
+  <div class="column">
+      <div class="person">
+     <h3>Date</h3>
+  <p>10.2019 – 11.2019 <br> third semester
+</p>
+  </div>
+
+    </div>
+
+</div>
+
+<div class="text">
+  <h3>About</h3>
+
+  <p class="tt" id="trigger">
+This website was built to tell the story of packages that my mother got when she was younger. She grew up in a small village in Silesia (Poland). At this time, there was an extreme food shortage in this region. For this reason, packages with food, toys, etc. were sent to children in these villages by private individuals or organizations from Germany. These packages meant a lot to my mother and her siblings. They represent small insights into the modern western world. To tell our story, we had to use a page builder tool that was affordable. Most of us chose pageflow, because of the wide range of available functions and easy use.
+</p>
+  </div>
+
+
+<video height="auto" muted loop  id="theTarget"
+        title="Advertisement"
+        width="100%" class="groß" 
+        src="img/page/Pa-1.m4v">
+    </video>
+
+
+<button class="Try"><a href="https://storytelling01.pageflow.io/westen-im-paket-9b3839f6-6450-486b-945f-b8e0159901d2#232307" target="_blank">Try it yourself!</a></button>
+
+</div>
+
+  <footer >
+  <p id="ll">Copyright Sarah Latka - © 2020 | <a href="legal.html" style="color: white; text-decoration: none;">Legal Notice</a> </p>
+</footer>
+
+<script type="text/javascript" src="js2.js"></script>
+
+</body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration:800
+    });
+  </script>
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+  function ToTop(){
+    scrollpos = 0;
+    scrollt = false;
+    window.scrollTo(0,0);
+}
+
+jQuery(document).ready(function() {
+  
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+});
+
+document.querySelector('.slowup').setAttribute('style','opacity:0');
+
+document.addEventListener ('scroll',function () {
+  document.querySelector('.slowup').setAttribute('style','opacity:0.6');
+});
+
+$(document).on('scroll', function() {
+  // #theTarget in deine id
+    if($(this).scrollTop()>=$('#trigger').position().top){
+        playVid('theTarget');
+    }
+    // #theTarget in deine 2 id
+    if($(this).scrollTop()>=$('#trigger2').position().top){
+        playVid('theTarget');
+    }
+})
+function playVid(vide) {
+    document.getElementById(vide).play();
+}
+
+$('#theTarget').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
+</script>
+
+
+</html>
